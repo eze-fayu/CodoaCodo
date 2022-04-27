@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    border: 5px solid blue;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-gap: 5px; */
+}
+
+.item{
+    border: 2px solid red;
+    grid-column-start: 2;
+    /* grid-column-end: 6; */
+    
+}
+
+.item5{
+    grid-column-start: 2 / span 6;
+    /* grid-column-end: 4; */
+}
