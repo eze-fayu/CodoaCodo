@@ -1,0 +1,1 @@
+document.write("<h2>Subtitulo desde Javascript</h2>")
