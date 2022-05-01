@@ -46,6 +46,9 @@ footer{
     .nav-bar {
         justify-content: space-around;
     }
+    .contenedor {
+        /* agregar un wrap pòrque no es responsive */
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -75,7 +78,7 @@ h1, h3{
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(3,1fr);
-    gap: 3px 3px;
+    gap: 10px 14px;
 
 }
 
@@ -86,6 +89,26 @@ h1, h3{
     height: auto;
 }
 
-image:hover{
+/* .imagen_contenedor{
+    display: grid;
+} */
+
+.descripciones{
+    color:white;
+    justify-content:stretch;
+    text-align: center;
+    margin-top: -40px;
     
+}
+
+
+.hover01 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 img:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
