@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0985d3ce7c.js" crossorigin="anonymous"></script>
+    <script src="web.js"></script>
 </head>
 <body>
     
@@ -37,7 +38,7 @@
                         <input type="text" name="asunto" spellcheck="true" autocomplete="off" placeholder="Introduce el Asunto" tabindex="4" required>
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" cols="30" rows="10" maxlength="300" spellcheck="true" autocomplete="off" placeholder="Introduce tu mensaje" tabindex="5" required></textarea>
-                        <button type="submit" tabindex="6">Enviar</button>
+                        <button type="submit" tabindex="6" onclick="valida_envia()">Enviar</button>
                 </fieldset>
             </form>
             <div class="datos_contacto">

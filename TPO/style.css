@@ -28,7 +28,7 @@ footer{
 .nav-bar ul{
     display: flex;
     list-style-type:none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 } 
 
 .nav-bar a{
@@ -78,6 +78,17 @@ li a:active,li a:visited,li a:link{
     flex-wrap: wrap;
     grid-template-columns: repeat(2,1fr);
     gap: 10px 14px;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+.formulario {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6px 1px;
 }
 
 .imagen{
