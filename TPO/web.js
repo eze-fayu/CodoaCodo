@@ -1,40 +1,75 @@
-   
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("funciona");
+});
+
+
+/*
+
+
+const formulario = document.getElementById("formulario");
+const userName = document.getElementById("nombre");
+const userEmail = document.getElementById("email");
+const usertel = document.getElementById("telefono");
+const userasunto = document.getElementById("asunto");
+const usermsj = document.getElementById("mensaje");
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("funciona");
+
+    console.log(userName.value);
+    console.log(userEmail.value);
+});
+
+
+
+
+
 function valida_envia(){
-    if (document.formulario.nombre.value.length==0){
+
+
+    // console.log(document.getElementsByName("nombre").value)
+    
+    if (userName.value.length==0){
            alert("Tiene que escribir su nombre")
            document.formulario.nombre.focus()
            return 0;
     }
 
-    telefono = document.formulario.telefono.value
-    telefono = validarEntero(telefono)
-    document.formulario.telefono.value=telefono
-    if (telefono.lengh>10){
+    if (usertel.lengh>10){
         alert("Tiene que introducir un número telefonico válido.")
-        document.formulario.telefono.focus()
+        usertel.focus()
         return 0;
     }
 
-    correo = document.formulario.correo.value
-    if (!correo.match( /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ )){
+    if (!userEmail.match( /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ )){
         alert("Tiene que introducir un email válido.")
-        document.formulario.correo.focus()
+        userEmail.focus()
         return 0;        
     }
     
-    if (document.formulario.asunto.value.length==0){
+    if (userasunto.value.length==0){
         alert("Tiene que escribir el asunto")
-        document.formulario.asunto.focus()
+        userasunto.focus()
         return 0;
     }
 
-    if (document.formulario.mensaje.value.length==0){
+    if (usermsj.value.length==0){
         alert("Tiene que escribir el mensaje")
-        document.formulario.mensaje.focus()
+        usermsj.focus()
         return 0;
     }
   
     //el formulario se envia
     alert("Muchas gracias por enviar el formulario");
     // document.formulario.submit();
+
 }
+
+
+formulario.addEventListener('submit', valida_envia());
+
+*/
