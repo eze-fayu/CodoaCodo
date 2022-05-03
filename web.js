@@ -1,38 +1,14 @@
-const formulario = document.getElementById("formulario");
-
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("funciona");
-});
-
-
-/*
-
-
-const formulario = document.getElementById("formulario");
-const userName = document.getElementById("nombre");
-const userEmail = document.getElementById("email");
-const usertel = document.getElementById("telefono");
-const userasunto = document.getElementById("asunto");
-const usermsj = document.getElementById("mensaje");
-
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("funciona");
-
-    console.log(userName.value);
-    console.log(userEmail.value);
-});
-
-
-
-
-
 function valida_envia(){
 
-
-    // console.log(document.getElementsByName("nombre").value)
+    const userName = document.getElementById("nombre");
+    const userEmail = document.getElementById("email");
+    const usertel = document.getElementById("telefono");
+    const userasunto = document.getElementById("asunto");
+    const usermsj = document.getElementById("mensaje");
+    console.log(userName)
     
+
+    /*
     if (userName.value.length==0){
            alert("Tiene que escribir su nombre")
            document.formulario.nombre.focus()
@@ -66,10 +42,8 @@ function valida_envia(){
     //el formulario se envia
     alert("Muchas gracias por enviar el formulario");
     // document.formulario.submit();
-
+*/
 }
 
 
-formulario.addEventListener('submit', valida_envia());
-
-*/
+document.getElementById("form").addEventListener('submit', valida_envia());
