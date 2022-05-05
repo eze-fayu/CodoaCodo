@@ -77,8 +77,9 @@ li a:active,li a:visited,li a:link{
 .contenedor_contacto {
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px 14px;
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 60px;
 }
 
 legend {
@@ -88,8 +89,12 @@ legend {
 .formulario {
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: auto auto;
     gap: 6px 1px;
+}
+
+label {
+    text-align: start;
 }
 
 .imagen{
@@ -106,7 +111,6 @@ legend {
     margin-top: 3px;
     
 }
-
 
 .hover01 img {
 	-webkit-transform: scale(1);
