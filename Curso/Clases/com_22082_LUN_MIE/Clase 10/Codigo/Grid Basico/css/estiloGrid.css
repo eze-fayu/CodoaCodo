@@ -1,0 +1,34 @@
+.container{
+  border: 5px solid blue;
+  display: grid;/*grilla*/
+  grid-template-columns:repeat(12,1fr);/*12 columnas de 1fr(una fraccion) son del mismo tamaño*/
+  grid-template-rows: 100px 150px 300px;/*Valor para la 1 columna 100px, la 2 150px y la 3 200px*/
+  gap: 10px 10px;/*espacio entre columnas y filas*/
+
+}
+.item{
+  border: 2px solid red;
+
+}
+.item1{
+  background-color: cornflowerblue;
+  grid-column-start: 6;/*de que linea de la columna comienza*/
+  grid-column-end: 8;/*Donde termina*/
+  grid-row-start: 2;/*para la fila de donde comienza*/
+
+}
+
+
+
+.item2{
+  background-color: aqua;
+  grid-column: span 6;/*cuantas columnas va a ocupar*/
+  justify-self:start;/*acomoda el item individual sobre el eje horizontal*/
+
+}
+.item3{
+  background-color: darkcyan;
+  grid-column: span 6;
+  align-self:end;/*alinea el item en el eje vertical ,a lo alto de sobre la fila */
+}
+

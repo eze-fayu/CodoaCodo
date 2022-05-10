@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    text-align: center;
+}
+div{
+    background-color: cornflowerblue;
+}
+header{
+    background-color: aqua;
+  
+    height:50px ;
+}
+
+h1,h2{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav{
+    background-color: aquamarine;
+}
+
+section{
+    background-color: beige;
+}
+
+#seccion1{
+    background-color: chartreuse;
+}
+article{
+    background-color: darkcyan;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+
+}
+.parrafo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+footer{
+    background-color: darkseagreen;
+}

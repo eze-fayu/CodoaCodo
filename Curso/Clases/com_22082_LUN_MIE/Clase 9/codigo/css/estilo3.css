@@ -1,0 +1,23 @@
+.container{
+    border: 5px solid blue;
+   display:flex;
+   flex-direction:row;
+   width: 400px;
+   flex-wrap: wrap; /*Agregar mas div en el html para que baje otra linea*/
+   column-gap: 2px;/*separa las columnas */
+   row-gap: 2px; /*separa las filas*/
+  
+}
+.item{
+    border: 2px solid red;
+    
+
+}
+.item-2{
+    flex-grow:2;/* flex-grow factor de crecimiento (solo numeros positivos), 
+    ocupa el espacio restante.Si cada caja tiene 44.44*3 es igual a 133.32
+    del ancho de 400px sobra 266.68 que es lo que ocupa ahora el item-2*/
+  
+    
+}
+

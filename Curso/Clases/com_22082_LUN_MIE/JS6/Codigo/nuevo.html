@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="example">Primer elemento div con el class="example".</div>
+
+<div class="example">Segundo elemento div con el class="example".</div>
+
+<p>Click para cambiar el texto del primer elemento div con la class="example" usar (index 0).</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("example");//referencia un elemento por el valor de su atributo class
+  for(let i=0;i<x.length;i++){
+  x[0].innerHTML = "Hello World!";//Recorro todos los class example
+  
+  }
+}
+</script>
+</body>
+</html>

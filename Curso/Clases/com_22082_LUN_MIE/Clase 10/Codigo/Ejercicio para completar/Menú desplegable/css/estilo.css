@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+     width: 100%;
+     margin: auto;
+ }
+ .grilla{
+     display: grid;
+     grid-template-columns: repeat(12,1fr);
+     grid-template-rows: 300px;
+
+ }
+ .logo{
+    grid-column: span 6;
+    align-self: center;
+    padding: 20px;
+ }
+ img{
+     width:50%;
+     padding: 20px;
+     margin:5px;
+ }
+ .logo titulo{
+     grid-column:span 6;
+    
+ }
+.menu,ul,li{
+    display: inline;
+    padding: 20px;
+    
+}
+ 
+    
+ .menu > li {
+    position: relative;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+ }
+
+ .menu li > ul{
+    display: none;
+    position: absolute;
+    background-color: #9FC8D9;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    list-style: none;
+    z-index: 1000;
+     
+
+ }
+ .menu li > ul > li {
+    width: 80px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
+    display: block;
+  
+    }
+    .menu li:hover ul {
+    display: block;
+    }
+   .menu a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+    
+    
+    }
+    .menu li:hover {
+    background-color:aquamarine;
+    }
+ 
+ 
+ 
