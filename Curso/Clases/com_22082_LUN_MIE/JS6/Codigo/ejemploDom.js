@@ -23,7 +23,7 @@ caja2.style.borderRadius='9px';
 document.body.append(caja,caja2);//
 /*
 let enlaces=document.querySelector('a');//Retorna solo el primer elemento encontrado
-enlaces.style.color='blue';
+enlaces.style.color='green';
 */
 
 const enlaces=[...document.querySelectorAll('a')];//Retorna todos los elementos

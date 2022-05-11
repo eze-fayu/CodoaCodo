@@ -9,13 +9,6 @@ function valida_envia(){
     const userAsunto = document.getElementById("asunto");
     const userMsj = document.getElementById("mensaje");
 
-    // console.log(userName)
-    // console.log("Valor de usertel: ",userTel.value)
-    // console.log("tamaño de usertel", userTel.value.lenght)
-    // console.log(userEmail)
-    // console.log(userAsunto)
-    // console.log(userMsj)
-
     if (userName.value.length==0){
         alert("Tiene que escribir su nombre")
         userName.focus()
@@ -53,4 +46,4 @@ function valida_envia(){
 }
 
 
-formulario.addEventListener('submit', valida_envia());
+// formulario.addEventListener('click', valida_envia());
