@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+     <h2>{{ message }}</h2>
+    </div>
+
+  
+    <div id="app-2">
+        <span v-bind:title="message">
+          Mueva el mouse sobre mí durante unos segundos
+          para ver mi título enlazado dinámicamente.
+        </span>
+      </div>
+
+      <div id="app-3">
+
+        <p>Diferencia v-show</p>
+        <span v-show="seen">Ahora me ves</span>
+         <p>v-if</p>
+        <span v-if="seen">Ahora me ves</span>
+      </div>
+
+
+
+
+      <h3>Uso de v-for</h3>
+ 
+        <ul id="example-1">
+            <li v-for="fruta in frutas" >
+            {{fruta.nombre }} - {{fruta.cantidad}}
+            <span v-if="fruta.cantidad===0">Sin Stock</span>
+            <span v-else-if="fruta.cantidad<5"> -Stock Bajo</span>
+            <span v-else="fruta.cantidad>=5"> - Stock Alto</span>
+            </li>
+           </ul>
+     
+           
+           <div id="app-5">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">Mensaje invertido</button>
+          </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="reactivo.js"></script>
+   
+
+</body>
+</html>

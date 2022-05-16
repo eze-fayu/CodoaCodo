@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE.js</title>
+</head>
+<body>
+    <!-- Renderización Declarativa -->
+    <div id="app">
+        <p>{{ mensaje }}</p>
+
+        <!-- v-model -->
+        <!-- Aquí en el input, lo que ingrese el usuario, modifica el message y el message modifica el 1er párrafo -->
+        <input type="text" v-model="mensaje">
+    </div>
+
+    <!-- Atributos enlazados -->
+    <div id="app-2">
+        <a v-bind:title="mensaje" href="#">Mueva el mouse sobre mí durante unos segundos para ver mi título enlazado dinámicamente.</a>
+    </div>
+
+    <!-- Más info: https://www.w3schools.com/whatis/whatis_vue.asp -->
+    
+    <!-- La forma más fácil de comenzar a usar Vue.js es crear un archivo index.html e incluir Vue con: -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

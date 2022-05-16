@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="example">
+        <p>Mensaje original: "{{ message }}"</p>
+        <p>Mensaje invertido computado: "{{ reversedMessage }}"</p>
+      </div>
+
+      <ul id="example-1">
+        
+        <li v-for="fruta in frutas">
+            {{ fruta.nombre}}-<input type="number" v-model.number="fruta.cantidad">
+            <button @click=fruta.cantidad++>+</button>
+            <button @click=fruta.cantidad-->-</button>
+            </li>
+            <h4>Total:{{sumarFrutas()}}</h4>
+
+            <input type="text" v-model="nuevaFruta">
+        <button v-on:click=agregarFruta()>Clic para agregar fruta</button>
+        </ul>
+       
+
+        
+    
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="reactivo4.js"></script>
+</body>
+</html>
