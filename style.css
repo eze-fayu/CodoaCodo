@@ -1,6 +1,7 @@
 body{
     background-color: burlywood;
     font-size: 16px;
+    margin: 10px;
     /* color: #f6822f; */     /* color naranjita del logo*/
     /* color: #b22e23; */     /* color rojo del logo */
 }
@@ -15,7 +16,19 @@ footer{
     max-width: 500px;
     min-width: 180px;
     height: auto;
-    opacity: 70%;
+    /* opacity: 70%; */
+    animation-name: tamano;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tamano{
+    from{
+        opacity: 30%;
+    };
+    to{
+        opacity: 100%;
+    }
 }
 
 .nav-bar{
@@ -110,6 +123,11 @@ label {
     text-align: center;
     margin-top: 3px;
     
+}
+
+.justificado {
+    text-align: justify;
+    padding: 5px;
 }
 
 .hover01 img {
