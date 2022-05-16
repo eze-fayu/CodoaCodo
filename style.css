@@ -20,6 +20,7 @@ footer{
     animation-name: tamano;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes tamano{
