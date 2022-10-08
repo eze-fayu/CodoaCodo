@@ -37,20 +37,19 @@ footer{
     justify-content: flex-end;
     margin: 3px;
     padding: 3px;
-    /* background-color: #eea774;  */
 }
 
 .nav-bar ul{
-    display: flex;
+    /* display: flex; */
     list-style-type:none;
     font-size: 1.8rem;
 } 
 
-.nav-bar a{
+/* .nav-bar a{
     text-decoration: none;
     display: block;
     padding: 1em;    
-}
+} */
 
 .nav-bar a:hover {
     font-weight: bolder;
