@@ -92,7 +92,7 @@ li a:active,li a:visited,li a:link{
     flex-wrap: wrap;
     /* grid-template-columns: repeat(2,1fr); */
     grid-template-columns: 1fr 2fr;
-    gap: 10px 60px;
+    gap: 1px 6px;
 }
 
 legend {
