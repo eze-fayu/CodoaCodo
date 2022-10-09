@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0985d3ce7c.js" crossorigin="anonymous"></script>
+    <script src="smtp.js"> </script>
     <!-- <script src="web.js"></script> -->
 </head>
 <body>
@@ -38,7 +39,7 @@
     <body>
         <div class="contenedor_contacto m-3">
             <div class="container px-5 my-5">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" onsubmit="enviar(); reset(); return false">
                     <div class="form-floating mb-3">
                         <input class="form-control" id="asunto" type="text" placeholder="Asunto" data-sb-validations="required" />
                         <label for="asunto">Asunto</label>
@@ -64,11 +65,11 @@
                         <div class="text-center text-danger mb-3">Error enviando el Mensaje!</div>
                     </div>
                     <div class="d-grid">
-                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
-            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+            <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
             
             <div class="datos_contacto" m-3 p-3>
                 <p class="justificado">Contactenos vía email o mediante nuestro formulario detallando en el mensaje el motivo de su contacto. Nuestras respuestas son personalizadas y por eso tras su consulta un asesor del sector correspondiente se comunicara a la brevedad. 
